@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-image: url('https://source.unsplash.com/1920x1080/?wedding,nature');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+        }
+
+        .hero {
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        .hero img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #555;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .details {
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .details span {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .rsvp {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .rsvp a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #6c63ff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .rsvp a:hover {
+            background-color: #554dff;
+        }
+
+        .gallery {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 250px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        .music-controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #playPauseButton {
+            background-color: #6c63ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #playPauseButton:hover {
+            background-color: #554dff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Musik Latar -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="./background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="header">
+        <h1>The Wedding of Dina & Raka</h1>
+        <p>"And among His signs is this: that He created for you mates from among yourselves, that you may dwell in tranquility with them, and He has put love and mercy between your hearts." (Surah Ar-Rum: 21)</p>
+    </div>
+
+    <div class="hero">
+        <img src="https://source.unsplash.com/800x500/?couple,wedding" alt="Wedding Couple">
+    </div>
+
+    <!-- Kontrol Musik -->
+    <div class="music-controls">
+        <button id="playPauseButton">Pause Music</button>
+    </div>
+
+    <div class="content">
+        <h2>You're Invited!</h2>
+        <p>We cordially invite you to celebrate our special day:</p>
+        <p><strong>Dina Ayu Ramadhani</strong><br> Daughter of Mr. Sutrisno & Mrs. Siti Rahmawati</p>
+        <p><strong>Raka Aditya Saputra</strong><br> Son of Mr. Harsono & Mrs. Sri Handayani</p>
+
+        <h2>Event Details</h2>
+        <div class="details">
+            <span><strong>Akad Nikah:</strong></span>
+            <span>📅 Sunday, 25 February 2025</span>
+            <span>⏰ 08.00 WIB</span>
+            <span>📍 Masjid Al-Hikmah, Jl. Kebun Raya No. 12, Jakarta</span>
+
+            <span><strong>Resepsi Pernikahan:</strong></span>
+            <span>📅 Sunday, 25 February 2025</span>
+            <span>⏰ 12.00 - 15.00 WIB</span>
+            <span>📍 Gedung Graha Citra, Jl. Pahlawan No. 45, Jakarta</span>
+            <span><a href="https://maps.google.com">Buka Google Maps</a></span>
+
+            <span><strong>Live Streaming:</strong></span>
+            <span><a href="https://zoom.us">Klik di sini untuk menyaksikan secara virtual</a></span>
+        </div>
+
+        <h2>Our Love Story</h2>
+        <p>💌 <strong>Awal Bertemu:</strong> Kami bertemu di acara seminar pendidikan pada tahun 2018.</p>
+        <p>💌 <strong>Pertemanan yang Tumbuh Menjadi Cinta:</strong> Selama bertahun-tahun, kami berbagi cerita, mimpi, dan akhirnya meyakini bahwa kami adalah pasangan hidup satu sama lain.</p>
+        <p>💌 <strong>Hari Bahagia Kami:</strong> Kami memutuskan untuk melangkah bersama ke jenjang yang lebih serius di tahun ini.</p>
+
+        <h2>Konfirmasi Kehadiran (RSVP)</h2>
+        <p>Kami sangat berterima kasih jika Anda dapat mengonfirmasi kehadiran Anda melalui form berikut:</p>
+        <p>👉 <a href="https://formlink.com">Isi Form RSVP di Sini</a></p>
+        <p>Atau hubungi kami langsung melalui WhatsApp:</p>
+        <p>📱 Dina: +62 812-3456-7890</p>
+        <p>📱 Raka: +62 813-4567-8901</p>
+
+        <h2>Galeri Kenangan Kami</h2>
+        <div class="gallery">
+            <img src="https://source.unsplash.com/250x250/?couple,romance" alt="Photo 1">
+            <img src="https://source.unsplash.com/250x250/?love,engagement" alt="Photo 2">
+            <img src="https://source.unsplash.com/250x250/?wedding,celebration" alt="Photo 3">
+        </div>
+
+        <h2>Hadiah Pernikahan (Opsional)</h2>
+        <p>Doa Anda adalah hadiah terbaik bagi kami. Namun, jika ingin memberikan hadiah lainnya, silakan kirim melalui:</p>
+        <p>🏦 <strong>BCA</strong><br> Nomor Rekening: 123456789<br> a.n. Dina Ayu Ramadhani</p>
+
+        <h2>Countdown to Our Special Day!</h2>
+        <p>⏳ <strong>45 Hari Lagi Menuju Hari Bahagia Kami!</strong></p>
+    </div>
+
+    <div class="footer">
+        <p>Thank you for sharing this special moment with us. Love, Dina & Raka</p>
+    </div>
+
+    <script>
+        const music = document.getElementById('backgroundMusic');
+        const button = document.getElementById('playPauseButton');
+
+        button.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                button.textContent = 'Pause Music';
+            } else {
+                music.pause();
+                button.textContent = 'Play Music';
+            }
+        });
+    </script>
+</body>
+</html>
